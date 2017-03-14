@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--修改个人资料标题栏-->
+    <RelativeLayout android:id="@+id/change_use_data_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="修改个人资料"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/white" />
+
+
+        <TextView android:id="@+id/change_use_data_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentLeft="true"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:layout_marginTop="17dp"
+            android:textSize="15dp"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/change_use_data_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="30dp">
+
+        <EditText android:id="@+id/use_data_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="昵称"
+            android:singleLine="true"
+            android:layout_alignParentTop="true"
+            android:inputType="text"/>
+
+        <EditText android:id="@+id/use_data_usename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="手机号/邮箱"
+            android:layout_below="@+id/use_data_nickname"
+            android:singleLine="true"
+            android:inputType="number"/>
+        
+        <LinearLayout android:id="@+id/change_use_data_layout2_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/use_data_usename">
+
+            <EditText android:id="@+id/use_data_checkcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="输入验证码"
+                android:inputType="number"/>
+
+            <Button android:id="@+id/use_data_getcheckcode"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="获取验证码"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:background="@color/black"/>
+
+        </LinearLayout>
+
+        <EditText android:id="@+id/use_data_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/change_use_data_layout2_1"
+            android:hint="密码(至少六位)"
+            android:inputType="textPassword"
+            android:singleLine="true"/>
+
+        <EditText android:id="@+id/use_data_check_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/use_data_password"
+            android:hint="确认密码"
+            android:inputType="textPassword"/>
+
+
+
+        <CheckBox android:id="@+id/use_choose_to_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/use_data_check_password" />
+
+        <TextView android:id="@+id/use_choose_to_student_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="是否进行学生身份验证"
+            android:layout_below="@+id/use_data_check_password"
+            android:layout_toRightOf="@+id/use_choose_to_student"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="3dp"/>
+
+        <CheckBox android:id="@+id/use_choose_to_business"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/use_choose_to_student"/>
+
+        <TextView android:id="@+id/use_choose_to_business_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否进行商家身份验证"
+            android:layout_below="@+id/use_choose_to_student"
+            android:layout_toRightOf="@+id/use_choose_to_business"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="3dp"/>
+
+        <Button android:id="@+id/use_finish_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/use_choose_to_business"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="确认修改"/>
+
+    </RelativeLayout>
+</LinearLayout>

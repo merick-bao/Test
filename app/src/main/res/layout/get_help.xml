@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/get_help_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/get_help_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="获取帮助"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/get_help_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/get_help_title_put"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="发布"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:clickable="true"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/get_help_quest_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/get_help_title_layout"
+        android:layout_margin="15dp">
+        <EditText
+            android:id="@+id/get_help_quest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="描述问题"
+            android:textColorHint="@color/wheat"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/get_help_quest_layout"
+        android:layout_margin="15dp"
+        android:layout_marginTop="40dp">
+
+
+        <TextView
+            android:id="@+id/get_help_add_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="+       图片"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimary"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/get_help_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/get_help_add_picture"/>
+
+        <ImageView
+            android:id="@+id/get_help_location_image"
+            android:layout_width="12dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/get_help_picture"
+            android:background="@drawable/ico_location"/>
+
+        <TextView
+            android:id="@+id/get_help_location_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/get_help_location_image"
+            android:text="获取定位"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="9dp"
+            android:textSize="15dp"
+            android:layout_below="@+id/get_help_picture"
+            android:textColor="@color/DeepSky_bule"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/get_help_money_image"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/get_help_location_image"
+            android:background="@drawable/ico_money"/>
+
+        <EditText
+            android:id="@+id/get_help_money_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/get_help_location_image"
+            android:layout_toRightOf="@+id/get_help_money_image"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="3dp"
+            android:hint="设置报酬"/>
+
+        <ImageView
+            android:id="@+id/get_help_time_image"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:background="@drawable/ico_time_table"
+            android:layout_below="@+id/get_help_money_image"
+            android:layout_marginTop="25dp"/>
+
+        <EditText
+            android:id="@+id/get_help_time_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/get_help_money_image"
+            android:layout_toRightOf="@+id/get_help_time_image"
+            android:hint="你希望多长时间解决"
+            android:layout_marginLeft="1.5dp"
+            android:layout_marginTop="7.5dp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

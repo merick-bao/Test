@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 问题描述背景框-->
+    <solid android:color="@color/white"/>
+    <corners android:radius="8dp"/>
+    <stroke
+        android:color="@color/wheat"
+        android:width="2dp"
+        android:dashWidth="3dp"
+        android:dashGap="3dp"/>
+</shape>

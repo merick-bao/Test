@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/verify_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&lt;返回"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/wheat"
+        android:clickable="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:layout_marginTop="150dp"
+        android:layout_below="@id/verify_back">
+        <TextView
+            android:id="@+id/verify_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="验证码已发送，请在手机或邮箱查收"
+            android:textSize="16dp"/>
+        <EditText
+            android:id="@+id/verify_verificode_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verify_text"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:hint="验证码"/>
+        <Button
+            android:id="@+id/verify_finish_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verify_verificode_input"
+            android:layout_marginTop="5dp"
+            android:text="确认注册"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@color/black"/>
+    </RelativeLayout>
+</RelativeLayout>

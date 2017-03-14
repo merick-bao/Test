@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--帮圈子标题栏-->
+    <RelativeLayout android:id="@+id/main4_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="帮圈子"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/white" />
+
+        <TextView android:id="@+id/main4_add_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:text="+发动态"
+            android:textColor="@color/white"
+            android:layout_marginTop="17dp"
+            android:textSize="15dp"
+            android:clickable="true"/>
+
+        <TextView android:id="@+id/main4_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentLeft="true"
+            android:text="刷新"
+            android:textColor="@color/white"
+            android:layout_marginTop="17dp"
+            android:textSize="15dp"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+    <!--用户动态-->
+    <RelativeLayout android:id="@+id/main4_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="15dp"
+        android:layout_below="@+id/main4_layout1"
+        android:background="@drawable/stroke_div">
+
+        <RelativeLayout android:id="@+id/main4_layout2_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/main4_use_head"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="头像"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/shap_oval_head"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView android:id="@+id/main4_use_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="陈鱼盆"
+                android:layout_toRightOf="@id/main4_use_head"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView android:id="@+id/main4_use_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今天23:11"
+                android:layout_below="@+id/main4_use_name"
+                android:layout_toRightOf="@+id/main4_use_head"
+                android:layout_marginLeft="10dp"/>
+
+            <Button android:id="@+id/main4_add_follow"
+                android:layout_width="65dp"
+                android:layout_height="25dp"
+                android:text="+关注"
+                android:textSize="15dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:background="@drawable/button_div"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/main4_layout2_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main4_layout2_1"
+            android:layout_marginTop="15dp">
+
+            <TextView android:id="@+id/main4_use_feel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     今天帮一位同学修了自行车，感觉好开心，哈哈哈。"
+                android:textColor="@color/black"/>
+
+            <ImageView android:id="@+id/main4_add_love"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/add_love"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/main4_use_feel"
+                android:clickable="true" />
+
+            <TextView android:id="@+id/main4_add_love_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32"
+                android:layout_toRightOf="@+id/main4_add_love"
+                android:layout_below="@id/main4_use_feel"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="3dp"/>
+
+            <EditText android:id="@+id/main4_use_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main4_add_love"
+                android:hint="评论"
+                android:layout_marginTop="15dp"
+                android:maxLines="3"
+                android:background="@drawable/storke_comment_edittext_div"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout android:id="@+id/use_star_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/use_star_list_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="头像"
+            android:background="@drawable/use_star_head"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView android:id="@+id/use_star_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/use_star_list_head"
+            android:layout_marginLeft="5dp"
+            android:text="张晓拉"
+            android:textColor="@color/black"/>
+
+        <TextView android:id="@+id/use_star_list_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/use_star_list_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="善良的女孩子"
+            android:layout_toRightOf="@+id/use_star_list_head"/>
+
+        <ImageView android:id="@+id/use_star_list_sex"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_toRightOf="@+id/use_star_list_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"/>
+
+        <TextView
+            android:id="@+id/use_star_score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帮帮正能量："
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/use_star_list_head"
+            android:textColor="@color/wheat"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/use_star_list_introduce"/>
+
+        <TextView
+            android:id="@+id/use_star_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/use_star_score_text"
+            android:text="555"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/wheat"
+            android:layout_below="@+id/use_star_list_introduce"/>
+    </RelativeLayout>
+
+</LinearLayout>

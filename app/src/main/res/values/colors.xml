@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="green1">#00FF00</color>
+    <color name="green2">#00FF7F</color>
+    <color name="green3">#00CD00</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#1C86EE</color>
+    <color name="light_blue">#AEEEEE</color>
+    <color name="DeepSky_bule">#00BFFF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="origin">#FF7F00</color>
+    <color name="white">#FFFAFA</color>
+    <color name="gray">#DCDCDC</color>
+    <color name="Dark_gray">#2F4F4F</color>
+    <color name="wheat">#CDBA96</color>
+    <color name="black">#000000</color>
+    <color name="burlywood">#8B7355</color>
+    <drawable name="red_d">#FF0000</drawable>
+    <drawable name="origin_d">#FF7F00</drawable>
+    <drawable name="dark_gray_d">#2F4F4F</drawable>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- padding 内边距   layout_margin 外边距
+        android:layout_alignParentTop 布局的位置是否处于顶部 -->
+
+    <!--帮社区首页Logo-->
+    <RelativeLayout
+        android:id="@+id/login_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/ico_launcher_4"/>
+    </RelativeLayout>
+
+    <!--登录账号区域-->
+    <RelativeLayout
+        android:layout_below="@id/login_layout1"
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="30dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/backlogin_login_div">
+        <TextView
+            android:id="@+id/login_username_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"/>
+        <EditText
+            android:id="@+id/login_username_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="手机号/邮箱"
+            android:inputType="number"
+            android:layout_below="@+id/login_username_text"/>
+        <TextView
+            android:id="@+id/login_password_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码"
+            android:layout_below="@+id/login_username_input"
+            android:layout_marginTop="5dp"/>
+        <EditText
+            android:id="@+id/login_password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_password_text"
+            android:inputType="textPassword"
+            android:hint="至少六位" />
+
+        <CheckBox
+            android:id="@+id/login_checkbox_save_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_password_input"
+            android:checked="true"/>
+
+        <TextView
+            android:id="@+id/login_checkbox_save_password_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住密码"
+            android:layout_below="@id/login_password_input"
+            android:layout_toRightOf="@+id/login_checkbox_save_password"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_checkbox_save_password"
+            android:text="登录"
+            android:textSize="20dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white"
+            android:background="@color/black"/>
+            <TextView
+                android:id="@+id/register_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/login_button"
+                android:text="没有账号？"/>
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/register_hint"
+                android:text="注册"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/login_button"
+                android:textColor="@color/black"
+                android:clickable="true"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/stroke_div">
+
+    <RelativeLayout android:id="@+id/get_help_item_layout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/get_help_item_use_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="头像"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/shap_oval_head"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView android:id="@+id/get_help_item_use_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/get_help_item_use_head"
+            android:layout_marginLeft="5dp"
+            android:text="陈小谋"
+            android:textColor="@color/black"/>
+
+        <TextView android:id="@+id/get_help_item_use_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人简介：IT男"
+            android:layout_below="@+id/get_help_item_use_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/get_help_item_use_head"/>
+
+        <ImageView android:id="@+id/get_help_item_use_sex"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/ico_sex_male"
+            android:layout_toRightOf="@+id/get_help_item_use_name"
+            android:layout_marginLeft="5dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/get_help_item_layout02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/get_help_item_layout01"
+        android:layout_marginTop="3dp">
+
+        <TextView android:id="@+id/get_help_item_question_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="问题描述：车子坏了，有急事，有没有老司机载载我(๑•ᴗ•๑)"
+            android:textColor="@color/black"/>
+
+        <ImageView android:id="@+id/get_help_item_use_location"
+            android:layout_width="12dp"
+            android:layout_height="15dp"
+            android:background="@drawable/ico_location"
+            android:layout_below="@+id/get_help_item_question_describe"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView android:id="@+id/get_help_item_use_location_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看定位"
+            android:layout_toRightOf="@+id/get_help_item_use_location"
+            android:layout_below="@+id/get_help_item_question_describe"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:clickable="true"
+            android:textColor="@color/blue"/>
+
+        <ImageView android:id="@+id/get_help_item_pay"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/ico_money"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="9dp"
+            android:layout_below="@+id/get_help_item_use_location"/>
+
+        <TextView android:id="@+id/get_help_item_pay_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="报酬：友谊是无价的"
+            android:textColor="@color/black"
+            android:layout_below="@+id/get_help_item_use_location"
+            android:layout_toRightOf="@+id/get_help_item_pay"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="4dp"/>
+
+        <ImageView android:id="@+id/get_help_item_time_photo"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:background="@drawable/ico_time_table"
+            android:layout_below="@+id/get_help_item_pay_describe"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="7dp" />
+
+        <TextView android:id="@+id/get_help_item_time_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/get_help_item_time_photo"
+            android:layout_below="@+id/get_help_item_pay_describe"
+            android:text="剩余帮助时间：15分钟"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/get_help_item_layout03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/get_help_item_layout02"
+        android:layout_marginTop="3dp">
+
+        <Button android:id="@+id/get_help_item_buton_lookdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/button_div"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:text="查看详情"
+            android:textColor="@color/white"/>
+
+        <Button android:id="@+id/get_help_item_buton_takehelp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="去帮他"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_div"/>
+
+        <Button android:id="@+id/get_help_item_buton_share"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="分享"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_div"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
